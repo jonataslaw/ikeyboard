@@ -1,15 +1,27 @@
 # iKeyboard
 
-A new flutter plugin project.
+A plugin that brings native iOS keyboard behavior to Flutter.
 
 ## Getting Started
 
-This project is a starting point for a Flutter
-[plug-in package](https://flutter.dev/developing-packages/),
-a specialized package that includes platform-specific implementation code for
-Android and/or iOS.
+Just put IKeyboard as MaterialApp ancestor and put IKeyboard.builder in MaterialApp builder, like this:
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+```dart
+class MyApp extends StatelessWidget {
+  const MyApp({Key? key}) : super(key: key);
 
+  @override
+  Widget build(BuildContext context) {
+    return const IKeyboard(
+      child: MaterialApp(
+        home: Home(),
+        builder: IKeyboard.builder,
+      ),
+    );
+  }
+}
+```
+
+This is the result:
+
+![](https://raw.githubusercontent.com/jonataslaw/ikeyboard/master/ikeyboard.gif)

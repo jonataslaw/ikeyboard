@@ -59,10 +59,14 @@ class Home extends StatelessWidget {
           ),
           TextFormField(
             autocorrect: false,
-            style: const TextStyle(color: Colors.green),
+            style: const TextStyle(color: Colors.white),
             decoration: const InputDecoration(
               fillColor: Colors.grey,
               border: InputBorder.none,
+              suffixIcon: Icon(
+                Icons.send,
+                color: Colors.purple,
+              ),
               focusedBorder: OutlineInputBorder(
                   borderRadius: BorderRadius.all(Radius.circular(5.0)),
                   borderSide: BorderSide(color: Colors.purple)),
@@ -70,7 +74,7 @@ class Home extends StatelessWidget {
               contentPadding:
                   EdgeInsets.only(bottom: 10.0, left: 10.0, right: 10.0),
             ),
-          )
+          ),
         ],
       ),
     );
