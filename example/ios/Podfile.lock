@@ -1,0 +1,22 @@
+PODS:
+  - Flutter (1.0.0)
+  - ikeyboard (0.0.1):
+    - Flutter
+
+DEPENDENCIES:
+  - Flutter (from `Flutter`)
+  - ikeyboard (from `.symlinks/plugins/ikeyboard/ios`)
+
+EXTERNAL SOURCES:
+  Flutter:
+    :path: Flutter
+  ikeyboard:
+    :path: ".symlinks/plugins/ikeyboard/ios"
+
+SPEC CHECKSUMS:
+  Flutter: 50d75fe2f02b26cc09d224853bb45737f8b3214a
+  ikeyboard: 2a421ed6fc3c6d911779b8d5fbf50b539689c8ff
+
+PODFILE CHECKSUM: aafe91acc616949ddb318b77800a7f51bffa2a4c
+
+COCOAPODS: 1.11.3
